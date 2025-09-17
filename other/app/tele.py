@@ -7,7 +7,6 @@ from langchain import requests
 
 bot = telebot.TeleBot('api-key')
 
-
 @bot.message_handler(commands=['start'])
 # 使得交互时候输入start，自动响应 您好！
 def start_message(message):

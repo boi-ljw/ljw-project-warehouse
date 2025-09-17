@@ -13,3 +13,4 @@ services:
       - REDIS_URL=redis://:1234567@redis:6379
 volumes:
   redis_data:
+
