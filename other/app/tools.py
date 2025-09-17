@@ -29,6 +29,7 @@ def search(query: str):
     )
     print(result)
 
+
 @tool
 def get_info_from_local_db(query: str):
     """本地知识库检索工具,只有回答与2024年的运势或者和龙年运势有关的问题的时候才会使用这个工具"""

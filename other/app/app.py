@@ -153,6 +153,7 @@ class Master:
         self.Qingxu = qingxu
         return result
 
+
     # def get_memory(self):
     #     chat_message_history = RedisChatMessageHistory(
     #         session_id="session",
