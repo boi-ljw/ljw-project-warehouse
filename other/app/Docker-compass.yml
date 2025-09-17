@@ -1,0 +1,15 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest
+    command: redis-server --require pass 1234567
+    volumes:
+      - redis_data:/data
+  ai-server:
+    build: ./
+    ports:
+      - "9000:9000"
+    environment:
+      - REDIS_URL=redis://:1234567@redis:6379
+volumes:
+  redis_data:
